@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtFirstSpaceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtFirstQuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFirstSpaceText"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Tell me more about you"
+
+            />
+
+        <TextView
+            android:id="@+id/textOtherSpaceText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFirstQuestionText"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textOtherSpaceRightText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFirstQuestionText"
+            android:layout_toEndOf="@id/textOtherSpaceText"
+            android:layout_toRightOf="@+id/textOtherSpaceText" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/textOtherSpaceText"
+            android:gravity="center_vertical"
+            android:text="Name"
+
+            />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textOtherSpaceRightText"
+            android:layout_toEndOf="@id/txtName"
+            android:layout_toRightOf="@id/txtName"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txtDateOfBirthday"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtName"
+            android:gravity="center_vertical"
+            android:text="Date" />
+
+        <EditText
+            android:id="@+id/edtDateOfBirth"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/edtName"
+            android:layout_toEndOf="@+id/txtDateOfBirthday"
+            android:layout_toRightOf="@+id/txtDateOfBirthday"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/txtTimeOfBirth"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtDateOfBirthday"
+            android:gravity="center_vertical"
+            android:text="Time Of Birth" />
+
+        <EditText
+            android:id="@+id/edtTimeOfBirth"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtDateOfBirthday"
+            android:layout_toEndOf="@+id/txtTimeOfBirth"
+            android:layout_toRightOf="@+id/txtTimeOfBirth"
+            android:inputType="time" />
+
+        <TextView
+            android:id="@+id/txtSecondSpaceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTimeOfBirth"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSecondSpaceText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="Exit" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSecondSpaceText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Submit" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
